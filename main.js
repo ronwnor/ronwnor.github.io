@@ -184,7 +184,7 @@ function setup(){ // setup
 }
 
 function draw(){ // loop
-	background(0,4);
+	background(0,200);
 	qtree = new QuadTree(.5*width, .5*height, width,height);
 	if(mouseIsPressed){
 		allParticles.push(new Particle(mouseX, mouseY, rand(-5,5),rand(-5,5)));
@@ -213,16 +213,3 @@ function draw(){ // loop
 		p.show();
 	}
 }
-
-
-
-	//let range = new Range(300, 200, 1000);
-	//let particlesInRange =	qtree.query(range);
-	//stroke(0,255,0);
-	//noFill();
-	//circle(range.x, range.y, range.r);
-	//for(p of particlesInRange){
-	//	noStroke();
-	//	fill(0,255,0,127);			
-	//	circle(p.x, p.y, 10);
-	//}
